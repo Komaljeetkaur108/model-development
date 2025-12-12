@@ -1,49 +1,80 @@
 # model-development
-# 🌐 Machine Learning Model Deployment (Flask API)
+Dataset Access Using Kaggle API
+📌 Project Overview
 
-## 📌 Project Overview
-This project focuses on deploying a trained machine learning model using a **Flask REST API**.  
-The goal was to make model predictions accessible through HTTP endpoints instead of notebooks.
+This project demonstrates how to access and download datasets from Kaggle using the Kaggle API.
+The goal was to work with large datasets efficiently without manually downloading files or using local storage.
 
----
+This approach is especially useful when working in Google Colab, where storage is temporary.
 
-## 🎯 Problem Statement
-Machine learning models are often built in notebooks but not usable in real applications.  
-This project addresses the challenge of serving predictions in a simple and scalable way.
+🎯 Problem Statement
 
----
+Large Kaggle datasets can be difficult to download manually
 
-## 💡 Solution
-I built a Flask-based REST API that:
-- Loads a trained ML model
-- Accepts input data
-- Returns predictions in JSON format
+Google Drive storage can fill up quickly
 
----
+Reproducible data access is important for machine learning workflows
 
-## 🛠 Tools & Technologies
-- Python  
-- Flask  
-- Scikit-learn  
-- Pickle (.pkl models)  
-- GitHub  
+💡 Solution
 
----
+I used the Kaggle API to:
 
-## 🔌 API Features
-- **Health check endpoint** to confirm the API is running
-- **Prediction endpoint** to return model outputs
-- Versioned structure for future model updates
+Authenticate securely using an API token
 
----
+Download datasets directly into the Colab runtime
 
-## 👩‍💻 My Role
-- Designed API structure  
-- Loaded trained models  
-- Implemented endpoints  
-- Tested API responses  
+Extract and prepare data for analysis
 
----
+This method avoids storage issues and supports reproducible workflows.
+
+🛠 Tools & Technologies
+
+Python
+
+Kaggle API
+
+Google Colab
+
+Pandas
+
+ZIP file handling
+
+🔑 Workflow
+
+Generate Kaggle API credentials from Kaggle account
+
+Upload kaggle.json securely to Colab
+
+Set file permissions for authentication
+
+Download datasets using Kaggle commands
+
+Extract and load data for analysis
+
+📊 Use Case
+
+Accessing large datasets for machine learning projects
+
+Running experiments without saving data permanently
+
+Faster and cleaner dataset setup in notebooks
+
+👩‍💻 My Role
+
+Configured Kaggle API authentication
+
+Downloaded and managed datasets in Colab
+
+Prepared data for further analysis and modeling
+
+📈 Outcome
+
+This project improved my understanding of data acquisition and dataset management using APIs and cloud-based notebooks. It also helped me work more efficiently with large datasets.
+
+📌 Key Learning
+
+Using the Kaggle API is a reliable and scalable way to access datasets and is a valuable skill for real-world data science workflows.
+
 
 ## 📈 Outcome
 This project demonstrates how machine learning models can be deployed and used in real-world applications beyond notebooks.
